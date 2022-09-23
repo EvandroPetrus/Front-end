@@ -8,10 +8,13 @@
     <style>
         .flex{
             display: flex;
-            width: 100%;
-            justify-content: center;
-            flex-direction: column;
+            width: 100%;            ;
+            flex-direction: row;
         }
+        body{
+            background-color: white;
+        }
+
         .item{
             width: 80px;
             height: 80px;
@@ -22,6 +25,27 @@
             color: whitesmoke;
             margin: 10px;                        
         }
+
+        .item:hover{
+            background-color: rgb(135, 28, 135);
+            cursor: pointer;
+        }
+
+        input:focus{
+            border-color: rgb(135, 28, 135);
+            background-color: pink;
+        }
+
+         /* @media (max-width: 450px){
+            body{
+                background-color: green;    change background based on devide 
+            }
+            .flex{
+                flex-direction:;
+            } 
+        }
+         */
+
     </style>
 </head>
 <body >
@@ -29,7 +53,12 @@
     <div class = "flex">
         <div class="item">Item a</div>
         <div class="item">Item b</div>
-        <div class="item">Item c</div>
+        <div class="item">Item c</div>    
+    </div>
+    <br>
+
+    <div>
+        <input />
     </div>
 </body>
 </html>
